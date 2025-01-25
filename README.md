@@ -1,4 +1,4 @@
-# Mihomo-Party-Rules 仅个人托管配置使用！
+# Mihomo-Party-Rules 仅用于个人托管配置使用！
 对于 Apple 分流规则
 请参考 blog.royli.dev/2019/better-proxy-rules-for-apple-services 这篇文章
 
