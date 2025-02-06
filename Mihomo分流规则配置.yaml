@@ -1,0 +1,192 @@
+
+proxy-groups:
+  - {name: 🚀 PROXY, type: select, proxies: [全部节点, 低倍率节点, 延迟优选, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/5453/5453658.png"}
+  - {name: 全部节点, type: select, include-all: true, icon: "https://fastly.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png"}
+  - {name: 手动选择-备用节点, type: select, include-all: true, icon: "https://cdn-icons-png.flaticon.com/128/3586/3586512.png"}  
+  - {name: 延迟优选, type: url-test, include-all: true, filter: "(?i)香港(?!.*(低倍率|[0-9]+\\.[0-9]+X))", icon: "https://cdn-icons-png.flaticon.com/128/9732/9732933.png", url: 'http://www.apple.com/library/test/success.html', interval: 300}
+  - {name: 香港节点, type: select, include-all: true, filter: "(?i)香港|hk|hongkong|hong kong", icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png"}  
+  - {name: 台湾节点, type: select, include-all: true, filter: "(?i)台湾|taiwan", icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png"}
+  - {name: 日本节点, type: select, include-all: true, filter: "(?i)日本|jp|japan", icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png"}  
+  - {name: 新加坡节点, type: select, include-all: true, filter: "(?i)新加坡|singapore", icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png"}
+  - {name: 韩国节点, type: select, include-all: true, filter: "(?i)韩国|korea", icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png"}
+  - {name: 美国节点, type: select, include-all: true, filter: "(?i)美国|us|unitedstates|united states", icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png"}
+  - {name: 低倍率节点, type: select, include-all: true, filter: "(?i)低倍率", icon: "https://cdn-icons-png.flaticon.com/128/18668/18668405.png"}
+  - {name: YouTube, type: select, proxies: [🚀 PROXY, 全部节点, 低倍率节点, 延迟优选, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/1384/1384060.png"}
+  - {name: Telegram, type: select, proxies: [🚀 PROXY, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/2111/2111646.png"}
+  - {name: AI人工智能, type: select, proxies: [🚀 PROXY, 手动选择-备用节点, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/11266/11266128.png"}
+  - {name: Tik Tok, type: select, proxies: [🚀 PROXY, 低倍率节点, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/15789/15789316.png"}
+
+  - {name: Facebook, type: select, proxies: [🚀 PROXY, 手动选择-备用节点, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/3670/3670124.png"}
+  - {name: Instagram, type: select, proxies: [🚀 PROXY, 手动选择-备用节点, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/15707/15707749.png"}
+  - {name: X, type: select, proxies: [🚀 PROXY, 手动选择-备用节点, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/5969/5969020.png"}
+  - {name: LinkedIn, type: select, proxies: [🚀 PROXY, 手动选择-备用节点, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/1377/1377213.png"}
+  - {name: Reddit, type: select, proxies: [🚀 PROXY, 手动选择-备用节点, 香港节点, 台湾节点, 日本节点, 新加坡节点, 韩国节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/2504/2504934.png"}        
+
+  - {name: APPLE 🇨🇳默认直连, type: select, proxies: [DIRECT, 🚀 PROXY, 低倍率节点, 美国节点], icon: "https://cdn-icons-png.flaticon.com/128/831/831278.png"}
+  - {name: Google, type: select, proxies: [🚀 PROXY, 全部节点, 延迟优选], icon: "https://cdn-icons-png.flaticon.com/128/281/281781.png"}
+  - {name: Final-兜底, type: select, proxies: [🚀 PROXY, 延迟优选], icon: "https://cdn-icons-png.flaticon.com/128/9582/9582354.png"}
+  - {name: Reject, type: select, proxies: [REJECT], icon: "https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png"}  
+  - {name: 全球直连, type: select, proxies: [DIRECT, 🚀 PROXY], icon: "https://cdn-icons-png.flaticon.com/128/10029/10029013.png"}  
+
+rules:
+  - "RULE-SET,AppleCN,APPLE 🇨🇳默认直连"
+  - "RULE-SET,Apple,APPLE 🇨🇳默认直连"
+
+  - "RULE-SET,perplexity,AI人工智能"    
+  - "RULE-SET,openai,AI人工智能"
+
+  - RULE-SET,telegram_non_ip,Telegram
+  - RULE-SET,telegram_ip,Telegram
+
+  - "RULE-SET,YouTube,YouTube"
+
+  - 'DOMAIN,lf16-effectcdn.byteeffecttos-g.com,Tik Tok'
+  - 'DOMAIN,lf16-pkgcdn.pitaya-clientai.com,Tik Tok'
+  - 'DOMAIN,p16-tiktokcdn-com.akamaized.net,Tik Tok'
+  - 'DOMAIN-SUFFIX,bytedapm.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,bytegecko-i18n.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,byteoversea.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,capcut.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,ibytedtos.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,ibyteimg.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,ipstatp.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,isnssdk.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,muscdn.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,musical.ly,Tik Tok'
+  - 'DOMAIN-SUFFIX,sgpstatp.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,snssdk.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,tik-tokapi.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,tiktok.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,tiktokcdn-us.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,tiktokcdn.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,tiktokd.net,Tik Tok'
+  - 'DOMAIN-SUFFIX,tiktokd.org,Tik Tok'
+  - 'DOMAIN-SUFFIX,tiktokmusic.app,Tik Tok'
+  - 'DOMAIN-SUFFIX,tiktokv.com,Tik Tok'
+  - 'DOMAIN-SUFFIX,tiktokv.us,Tik Tok'
+  - 'DOMAIN-SUFFIX,ttwebview.com,Tik Tok'
+  - 'DOMAIN-KEYWORD,musical.ly,Tik Tok'
+  - 'DOMAIN-KEYWORD,tiktok,Tik Tok'
+  - 'PROCESS-NAME,com.zhiliaoapp.musically,Tik Tok'  
+  - "RULE-SET,tiktok-rules,Tik Tok"  
+
+  - "RULE-SET,facebook-rules,Facebook"  
+  - "RULE-SET,instagram-rules,Instagram"  
+  - "RULE-SET,LinkedIn-rules,LinkedIn"  
+  - "RULE-SET,X-rules,X"     
+  - "RULE-SET,Reddit-rules,Reddit"     
+
+  - "RULE-SET,google_domain,Google"
+
+  - IP-CIDR,45.196.236.214/32,低倍率节点 # Aikan EMBY 分流
+
+  - GEOIP,CN,DIRECT
+  
+  - GEOSITE,cn,DIRECT
+  
+  - "MATCH,Final-兜底"
+
+
+
+rule-providers:
+
+  telegram_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/non_ip/telegram.txt
+    path: ./sukkaw_ruleset/telegram_non_ip.txt
+  telegram_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 43200
+    url: https://ruleset.skk.moe/Clash/ip/telegram.txt
+    path: ./sukkaw_ruleset/telegram_ip.txt
+
+  google_domain:
+    url: https://whatshub.top/rule/Google.rule
+    path: ./ruleset/google_domain.yaml
+    behavior: domain
+    interval: 86400
+    format: yaml
+    type: http
+
+  openai:
+    url: https://raw.githubusercontent.com/meslcloud/Rule/refs/heads/main/Clash/OpenAI.yaml
+    path: ./ruleset/openai.yaml
+    behavior: classical
+    interval: 86400
+    format: yaml
+    type: http
+
+  tiktok-rules:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://whatshub.top/rule/TikTok.rule"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/tiktok-rules.yaml  # 本地缓存路径（可自定义）
+
+  facebook-rules:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://whatshub.top/rule/Facebook.rule"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/facebook-rules.yaml  # 本地缓存路径（可自定义）
+
+  instagram-rules:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://whatshub.top/rule/Instagram.rule"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/instagram-rules.yaml  # 本地缓存路径（可自定义）
+
+  LinkedIn-rules:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://whatshub.top/rule/LinkedIn.rule"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/LinkedIn-rules.yaml  # 本地缓存路径（可自定义）
+
+  X-rules:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://whatshub.top/rule/Twitter.rule"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/X-rules.yaml  # 本地缓存路径（可自定义）
+
+  Reddit-rules:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://whatshub.top/rule/Reddit.rule"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/Reddit-rules.yaml  # 本地缓存路径（可自定义）
+
+  perplexity:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://raw.githubusercontent.com/meslcloud/Rule/refs/heads/main/Clash/Perplexity.yaml"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/perplexity.yaml  # 本地缓存路径（可自定义）
+
+  YouTube:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://raw.githubusercontent.com/meslcloud/Rule/refs/heads/main/Clash/YouTube.yaml"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/YouTube.yaml  # 本地缓存路径（可自定义）
+
+  Apple:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://raw.githubusercontent.com/meslcloud/Rule/refs/heads/main/Clash/Apple.yaml"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/Apple.yaml  # 本地缓存路径（可自定义）
+    
+  AppleCN:  # 规则集名称（可自定义）
+    type: http  # 类型为 HTTP
+    behavior: classical  # 规则行为
+    url: "https://raw.githubusercontent.com/meslcloud/Rule/refs/heads/main/Clash/AppleCN.yaml"  # 规则集的链接地址
+    interval: 86400  # 更新间隔（秒），建议 86400（1 天）
+    path: ./ruleset/AppleCN.yaml  # 本地缓存路径（可自定义）
